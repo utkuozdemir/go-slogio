@@ -14,7 +14,7 @@ But you have an `slog.Logger` at hand, not an `io.Writer`.
 
 You can use this to fill the gap.
 
-### Example
+## Example
 
 ```golang
 logger := slog.New(slog.NewTextHandler(os.Stderr, nil))
@@ -33,13 +33,13 @@ if err := cmd.Run(); err != nil {
 logger.Info("done")
 ```
 
-### Disclaimer
+## Disclaimer
 
 This project is based on [uber-go/zap](https://github.com/uber-go/zap), licensed under the [MIT License](https://github.com/uber-go/zap/blob/fcf8ee58669e358bbd6460bef5c2ee7a53c0803a/LICENSE).
 
 Original copyright:
 Copyright (c) 2016-2017 Uber Technologies, Inc.
 
-### License
+## License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
